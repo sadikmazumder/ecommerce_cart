@@ -11,16 +11,18 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Routes>
-          <Route path="/" exact element={<ProductListing />} />
-          <Route
-            path="/product/:productId"
-            exact
-            element={<ProductDetails />}
-          />
-          <Route>404 Not Found!!</Route>
-          {/** this route is for 404**/}
-        </Routes>
+        <div style={{ marginTop: "80px" }}>
+          <Routes>
+            <Route path="/" exact element={<ProductListing />} />
+            <Route
+              path="/product/:productId"
+              exact
+              element={<ProductDetails />}
+            />
+            <Route>404 Not Found!!</Route>
+            {/** this route is for 404**/}
+          </Routes>
+        </div>
       </Router>
     </div>
   );
